@@ -1,4 +1,4 @@
-import 'package:bloclearning/codextutorials/part2/news_screen.dart';
+import 'package:bloclearning/vandad11hours/json_files/json_example_screen.dart';
 import 'package:bloclearning/vandad11hours/random_names/random_names_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +18,7 @@ class VandadHomeScreen extends StatelessWidget {
           child: Column(
             children: [
               ElevatedButton(
-                onPressed: () => Get.to(const RandomNamesScreen()),
+                onPressed: () => Get.to(() => const RandomNamesScreen()),
                 child: const Text(
                   'A simple app that can pick random names from an '
                   'Iterable<String> using cubits.',
@@ -26,8 +26,10 @@ class VandadHomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () => Get.to(const NewsScreen()),
-                child: const Text('Part 2'),
+                onPressed: () => Get.to(() => const JsonExampleScreen()),
+                child: const Text(
+                  'An app that can load various JSON files and display them.',
+                ),
               ),
             ],
           ),

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:bloclearning/res/constants.dart';
 import 'package:http/http.dart' as http;
-import 'package:bloclearning/models/news_info.dart';
+import 'package:bloclearning/codextutorials/models/news_info.dart';
 
 enum NewsAction { fetch, delete }
 

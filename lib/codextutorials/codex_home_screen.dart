@@ -18,12 +18,12 @@ class CodexHomeScreen extends StatelessWidget {
           child: Column(
             children: [
               ElevatedButton(
-                onPressed: () => Get.to(const CounterExampleScreen()),
+                onPressed: () => Get.to(() => const CounterExampleScreen()),
                 child: const Text('Part 1'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () => Get.to(const NewsScreen()),
+                onPressed: () => Get.to(() => const NewsScreen()),
                 child: const Text('Part 2'),
               ),
             ],

@@ -1,5 +1,5 @@
 import 'package:bloclearning/codextutorials/part2/news_bloc.dart';
-import 'package:bloclearning/models/news_info.dart';
+import 'package:bloclearning/codextutorials/models/news_info.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
