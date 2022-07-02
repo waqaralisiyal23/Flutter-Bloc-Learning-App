@@ -1,6 +1,8 @@
-import 'package:bloclearning/vandad11hours/enums/enums.dart';
-import 'package:bloclearning/vandad11hours/json_files/json_files_classes.dart';
-import 'package:bloclearning/vandad11hours/json_files/persons_bloc.dart';
+import 'package:bloclearning/res/constants.dart';
+import 'package:bloclearning/vandad11hours/json_files/bloc/bloc_actions.dart';
+import 'package:bloclearning/vandad11hours/json_files/bloc/person.dart';
+import 'package:bloclearning/vandad11hours/json_files/bloc/persons_bloc.dart';
+import 'package:bloclearning/vandad11hours/services/local_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -24,7 +26,10 @@ class JsonExampleScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () {
                       context.read<PersonsBloc>().add(
-                            const LoadPersonsAction(url: PersonUrl.persons1),
+                            const LoadPersonsAction(
+                              url: Constants.person1Url,
+                              loader: LocalApi.getPersons,
+                            ),
                           );
                     },
                     child: const Text('Load Json #1'),
@@ -33,7 +38,10 @@ class JsonExampleScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () {
                       context.read<PersonsBloc>().add(
-                            const LoadPersonsAction(url: PersonUrl.persons2),
+                            const LoadPersonsAction(
+                              url: Constants.person2Url,
+                              loader: LocalApi.getPersons,
+                            ),
                           );
                     },
                     child: const Text('Load Json #2'),

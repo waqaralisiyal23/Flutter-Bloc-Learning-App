@@ -1,4 +1,4 @@
-import 'package:bloclearning/vandad11hours/json_files/persons_bloc.dart';
+import 'package:bloclearning/vandad11hours/json_files/bloc/persons_bloc.dart';
 import 'package:bloclearning/vandad11hours/vandad_home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
