@@ -1,4 +1,4 @@
-import 'package:bloclearning/codextutorials/codex_home_screen.dart';
+import 'package:bloclearning/vandad11hours/vandad_home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: const CodexHomeScreen(),
+      // home: const CodexHomeScreen(),
+      home: const VandadHomeScreen(),
     );
   }
 }
